@@ -7,7 +7,8 @@ import Loading from "./Loading";
 
 function IntroRenderer({currentTest}) {
 
-    const [mode, setMode] = useState("intro");
+    const [mode, setMode] = useState("loading");
+    // const [mode, setMode] = useState("intro");
     const [mbtiScore, setMbtiScore] = useState({
         E: 0,
         I: 0,
