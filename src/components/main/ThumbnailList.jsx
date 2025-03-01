@@ -4,13 +4,14 @@ import { useState } from 'react';
 import { base_url } from "../../App";
 
 function ThumbnailList() {
-    const [testList] = useState(TESTS);
+    const [testList, setTestList] = useState(TESTS);
 
     return (
         <div>
             {testList?.map((test) => (
                 <Link to={`${base_url}/${test?.info?.mainUrl}`} key={test?.info?.mainUrl}>
                 <img 
+                    style={{ width: "100%"}}
                     src={test?.info?.thumbImage} 
                     alt={test?.info?.mainUrl} 
                     key={test?.info?.mainUrl} 
