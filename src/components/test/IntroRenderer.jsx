@@ -7,8 +7,8 @@ import Loading from "./Loading";
 
 function IntroRenderer({currentTest}) {
 
-    const [mode, setMode] = useState("loading");
-    // const [mode, setMode] = useState("intro");
+    // const [mode, setMode] = useState("loading");
+    const [mode, setMode] = useState("intro");
     const [mbtiScore, setMbtiScore] = useState({
         E: 0,
         I: 0,
@@ -32,7 +32,7 @@ function IntroRenderer({currentTest}) {
             setMode={setMode}
          />;
     } else if (mode === "loading") {
-        return <Loading />;
+        return <Loading mbtiScore={mbtiScore} currentTest={currentTest}/>;
     } else {
         return <div>잘못된 페이지 입니다.</div>;
     }
