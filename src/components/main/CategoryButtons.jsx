@@ -1,5 +1,5 @@
 function CategoryButtons(){
-    return <dev>CategoryButtons</dev>
+    return <div>CategoryButtons</div>
 }
 
 export default CategoryButtons;

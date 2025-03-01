@@ -1,5 +1,5 @@
 function LanguageIcons(){
-    return <dev>LanguageIcons</dev>
+    return <div>LanguageIcons</div>
 }
 
 export default LanguageIcons;

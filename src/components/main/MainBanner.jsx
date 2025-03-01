@@ -1,5 +1,5 @@
 function MainBanner(){
-    return <dev>MainBanner</dev>
+    return <div>MainBanner</div>
 }
 
 export default MainBanner;
