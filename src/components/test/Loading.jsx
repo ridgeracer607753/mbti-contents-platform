@@ -1,24 +1,25 @@
 import Lottie from 'react-lottie'
-import React, { use } from 'react'
+import React, { useState, useEffect } from 'react'
 import * as animationData from '../../assets/loading-animation.json'
-import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 
-function Loading({mbtiScore, currentTest}) {
+function Loading({ mbtiScore, currentTest }) {
+    const navigate = useNavigate();
+    const loadingTime = 3700;
+
+    const [resultQuery, setResultQuery] = useState("");
 
     const defaultOptions = {
         loop: true,
         autoplay: true,
         animationData: animationData.default,
         rendererSettings: {
-          preserveAspectRatio: "xMidYMid slice"
+            preserveAspectRatio: "xMidYMid slice"
         }
-        }; 
+    };
 
     useEffect(() => {
-        console.log(mbtiScore);
-        console.log(currentTest);
-
-        const mbtiPais = [
+        const mbtiPairs = [
             ["E", "I"],
             ["S", "N"],
             ["T", "F"],
@@ -27,7 +28,7 @@ function Loading({mbtiScore, currentTest}) {
 
         let resultType = "";
 
-        for (let pair of mbtiPais) {
+        for (let pair of mbtiPairs) {
             if (mbtiScore[pair[0]] > mbtiScore[pair[1]]) {
                 resultType += pair[0];
             } else {
@@ -35,19 +36,24 @@ function Loading({mbtiScore, currentTest}) {
             }
         }
 
-        
+        const query = currentTest?.results?.find(result => result?.type === resultType)?.query;
 
-        //DB에서 결과값 찾기
-        const resultQuery =  currentTest?.results?.find((result) => (
-            result?.type === resultType
-        ))?.query;
+        setResultQuery(query); // 저장
+        console.log(resultType, query);
+    }, [mbtiScore, currentTest]);
 
-        console.log(resultType , resultQuery);
-             
+    useEffect(() => {
+        if (!resultQuery) return;
+    
+        const timer = setTimeout(() => {
+            navigate(`/${currentTest.info.mainUrl}/result/${resultQuery}`);
+        }, loadingTime);
+    
+        return () => clearTimeout(timer); // 언마운트 시 클린업
+    }, [loadingTime, resultQuery, navigate, currentTest]);
+    
 
-    },[mbtiScore,currentTest]);
-
-  return <Lottie options={defaultOptions} height={250} width={250} style={{marginTop: "10rem"}}/>;
+    return <Lottie options={defaultOptions} height={250} width={250} style={{ marginTop: "10rem" }} />;
 }
 
-export default Loading
+export default Loading;
