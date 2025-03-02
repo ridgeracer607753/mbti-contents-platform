@@ -11,7 +11,12 @@ function TestResult() {
 
   const navigate = useNavigate();
   const {testParam, resultParam} = useParams(); // URL에서 전달된 값을 가져옴
+  
+console.log('🔥 testParam:', testParam);
+console.log('🔥 resultParam:', resultParam);
+
   const [renderResultInfo, setRenderResultInfo] = useState({});
+  const [renderTestInfo, setRenderTestInfo] = useState({});
 
   useEffect(() => {
     const testInfo = TESTS?.find((test) => test?.info?.mainUrl === testParam);
@@ -19,6 +24,7 @@ function TestResult() {
       alert("존재하지 않는 테스트입니다.");
       return navigate("/");
     }
+    setRenderTestInfo(testInfo);
 
     const resultInfo = testInfo?.results?.find((result) => 
       result.query === resultParam
@@ -38,7 +44,7 @@ console.log(resultInfo);
 
   return <div>
     <TestResultRenderer  renderResultInfo={renderResultInfo} />
-    <ShareButtonGroup />
+    <ShareButtonGroup testParam={testParam} resultParam={resultParam} renderTestInfo={renderTestInfo} />
     <ResultButtonGroup />
     <ResultThumbnailList />
   </div>;
