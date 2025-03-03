@@ -10,10 +10,8 @@ function ThumbnailList() {
 
     useEffect(() => {
         const currentLanguage = searchParams.get('lang') || 'kor';
-        console.log(currentLanguage);
-        console.log(111);
+ 
         if (currentLanguage){
-            console.log(currentLanguage);
             const languagefilteredTests = TESTS.filter((test) => test?.info?.lang === currentLanguage);
             setTestList(languagefilteredTests);
         }
