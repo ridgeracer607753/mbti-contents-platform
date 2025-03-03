@@ -39,7 +39,7 @@ const ShareButtonGroup = ({testParam, resultParam,renderTestInfo}) => {
             <CopyToClipboard text={`${base_url}/${testParam}/result/${resultParam}`}>
             <button 
                 onClick={() => alert('URL이 복사되었습니다.')}
-                className={styles.urlShareButton} >URL 복사</button>
+                className={styles.urlShareButton} >URL</button>
             </CopyToClipboard>
         </div>
     </div>

@@ -43,10 +43,12 @@ console.log(resultInfo);
 
 
   return <div>
+    console.log('🔥 testParam:', testParam);
+
     <TestResultRenderer  renderResultInfo={renderResultInfo} />
     <ShareButtonGroup testParam={testParam} resultParam={resultParam} renderTestInfo={renderTestInfo} />
-    <ResultButtonGroup />
-    <ResultThumbnailList />
+    <ResultButtonGroup testParam={testParam} resultParam={resultParam} renderTestInfo={renderTestInfo} />
+    <ResultThumbnailList testParam={testParam} />
   </div>;
 }
 
