@@ -294,7 +294,7 @@ export const TESTS = [
       mainUrl: "personalColorEng",
       scoreType: "MBTI",
       mainImage:
-        "https://raw.github.com/ridgeracer607753/projectImage/blob/main/images/dogMbti-intro01.png",
+        "https://raw.githubusercontent.com/ridgeracer607753/projectImage/main/images/dogMbti-intro01.png",
       thumbImage:
         "https://raw.githubusercontent.com/ridgeracer607753/projectImage/main/images/dogMbti-thumb05.png",
       lang: "Eng",
