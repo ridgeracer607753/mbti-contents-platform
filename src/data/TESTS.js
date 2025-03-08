@@ -294,9 +294,9 @@ export const TESTS = [
       mainUrl: "personalColorEng",
       scoreType: "MBTI",
       mainImage:
-        "https://www.dropbox.com/scl/fi/jmihoko6rjpk0d3rgewsr/personalColorEng-intro.png?rlkey=ifyyqa8m4w44vq1nk08fshhnj&st=n42rl4fc&dl=1",
+        "https://raw.github.com/ridgeracer607753/projectImage/blob/main/images/dogMbti-intro01.png",
       thumbImage:
-        "https://raw.githubusercontent.com/ridgeracer607753/projectImage/main/images/dogMbti-thumb04.png",
+        "https://raw.githubusercontent.com/ridgeracer607753/projectImage/main/images/dogMbti-thumb05.png",
       lang: "Eng",
       category: "characteristic",
     },
