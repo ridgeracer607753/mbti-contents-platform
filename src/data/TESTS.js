@@ -2,8 +2,9 @@ export const TESTS = [
   // personalColor
   {
     info: {
-      mainTitle: "퍼스널 컬러 테스트",
-      subTitle: "나에게 어울리는 컬러는 무엇일까?",
+      mainTitle: "여행 성향 테스트",
+      subTitle: "나에게 어울리는 여행 스타일은?",
+
       mainUrl: "personalColor",
       scoreType: "MBTI",
       mainImage:
@@ -13,180 +14,179 @@ export const TESTS = [
       lang: "Kor",
       category: "characteristic",
     },
-    questions: [
-      {
-        which: "EI",
-        question: "처음 보는 친구들에게 나는?",
-        answers: [
-          {
-            type: "E",
-            content: "내가 먼저 말을 건낸다.",
-          },
-          {
-            type: "I",
-            content: "대부분 다른 친구가 먼저 말을 건낸다.",
-          },
-        ],
-      },
-      {
-        which: "EI",
-        question: "주말에 난?",
-        answers: [
-          {
-            type: "E",
-            content: "사람들과 만나는 것을 즐긴다.",
-          },
-          {
-            type: "I",
-            content: "혼자 있는 게 싫지 않은 편이다.",
-          },
-        ],
-      },
-      {
-        which: "EI",
-        question: "친구들과 놀 때 나는?",
-        answers: [
-          {
-            type: "E",
-            content: "왁자지껄한 신나는 분위기를 좋아한다.",
-          },
-          {
-            type: "I",
-            content: "소수의 친구들과 소소하게 대화하는 것을 좋아한다. ",
-          },
-        ],
-      },
-      {
-        which: "SN",
-        question: "내가 더 중요하게 생각하는 것은?",
-        answers: [
-          {
-            type: "S",
-            content: "현재가 없으면 미래도 없다.",
-          },
-          {
-            type: "N",
-            content: "미래를 생각하지 않으면 발전이 없다.",
-          },
-        ],
-      },
-      {
-        which: "SN",
-        question: "일할 때 나는?",
-        answers: [
-          {
-            type: "S",
-            content: "남들이 하는 대로 따라 가는 것이 좋다.",
-          },
-          {
-            type: "N",
-            content: "스스로 나만의 방법을 만드는 게 좋다. ",
-          },
-        ],
-      },
-      {
-        which: "SN",
-        question: "주변 사람들이 나에게 하는 말은?",
-        answers: [
-          {
-            type: "S",
-            content: "꾸준하고 참을성이 있다는 말을 자주한다.",
-          },
-          {
-            type: "N",
-            content: "창의적이고 독창적이라는 말을 자주한다.",
-          },
-        ],
-      },
-      {
-        which: "TF",
-        question: "거절해야 하는 상황이 오면 나는?",
-        answers: [
-          {
-            type: "T",
-            content: "강력하게 할 수 없다고 말한다.",
-          },
-          {
-            type: "F",
-            content: "고민하다가 대부분 들어주는 편이다.",
-          },
-        ],
-      },
-      {
-        which: "TF",
-        question: "화났을 때 나는?",
-        answers: [
-          {
-            type: "T",
-            content: "논리적으로 잘 말하면서 따진다. ",
-          },
-          {
-            type: "F",
-            content: "할말이 많지만 너무 분해서 눈물부터 난다.",
-          },
-        ],
-      },
-      {
-        which: "TF",
-        question:
-          "고민을 얘기하는 친구, 듣다 보니 친구의 잘못인 것 같다. 그럴 때 나는?",
-        answers: [
-          {
-            type: "T",
-            content: "친구의 잘못된 점을 말해준다.",
-          },
-          {
-            type: "F",
-            content: "직접적으로 말하면 친구가 그래 할까봐 돌려 말한다.",
-          },
-        ],
-      },
-      {
-        which: "JP",
-        question: "준비물을 준비할 때 나는?",
-        answers: [
-          {
-            type: "J",
-            content: "하루 전 날 미리 준비한다.",
-          },
-          {
-            type: "P",
-            content: "‘내일 챙겨야지’ 하다가 까먹고 놓고 오는 일이 많다.",
-          },
-        ],
-      },
-      {
-        which: "JP",
-        question:
-          "끝나고 집에 가서 공부하려 했는데, 친구들이 놀자고 붙잡는다. 나는?",
-        answers: [
-          {
-            type: "J",
-            content: "계획에 없던 일인데…매우 당황스럽다.",
-          },
-          {
-            type: "P",
-            content: "오케이! 역시 계획대로 안 되는 것이 인생! 놀자!!!!",
-          },
-        ],
-      },
-      {
-        which: "JP",
-        question: "내가 가고싶은 여행지 스타일은?",
-        answers: [
-          {
-            type: "J",
-            content:
-              "내가 계획한대로! 계획적으로 일의 순서대로 진행하는 것을 좋아해!",
-          },
-          {
-            type: "P",
-            content:
-              "그때그때 생각나는 대로 일 처리! 융통성 있게 하는 것을 좋아해!",
-          },
-        ],
-      },
-    ],
+    
+      "questions": [
+        {
+          "which": "EI",
+          "question": "여행을 떠나는 순간, 나는?",
+          "answers": [
+            {
+              "type": "E",
+              "content": "도착하자마자 주변 사람들과 어울리고 싶다."
+            },
+            {
+              "type": "I",
+              "content": "조용히 분위기를 느끼며 여행을 시작하고 싶다."
+            }
+          ]
+        },
+        {
+          "which": "EI",
+          "question": "여행 중 새로운 사람을 만나면?",
+          "answers": [
+            {
+              "type": "E",
+              "content": "쉽게 말을 걸고 함께 어울리려 한다."
+            },
+            {
+              "type": "I",
+              "content": "대화는 가능하지만 먼저 다가가진 않는다."
+            }
+          ]
+        },
+        {
+          "which": "EI",
+          "question": "여행의 즐거움은?",
+          "answers": [
+            {
+              "type": "E",
+              "content": "사람들과 함께하는 순간에서 온다."
+            },
+            {
+              "type": "I",
+              "content": "혼자만의 시간을 즐길 때 더욱 만족스럽다."
+            }
+          ]
+        },
+        {
+          "which": "SN",
+          "question": "여행지를 고를 때 나는?",
+          "answers": [
+            {
+              "type": "S",
+              "content": "이미 유명하고 검증된 곳을 선호한다."
+            },
+            {
+              "type": "N",
+              "content": "사람들이 잘 모르는 새로운 곳을 탐험하고 싶다."
+            }
+          ]
+        },
+        {
+          "which": "SN",
+          "question": "여행을 하면서 나는?",
+          "answers": [
+            {
+              "type": "S",
+              "content": "실제로 경험하고 느낀 것에 집중한다."
+            },
+            {
+              "type": "N",
+              "content": "상상과 기대를 더하며 의미를 찾는다."
+            }
+          ]
+        },
+        {
+          "which": "SN",
+          "question": "여행 스타일을 한마디로 표현하면?",
+          "answers": [
+            {
+              "type": "S",
+              "content": "현실적이고 실용적인 여행."
+            },
+            {
+              "type": "N",
+              "content": "새로운 시각과 영감을 얻는 여행."
+            }
+          ]
+        },
+        {
+          "which": "TF",
+          "question": "여행 중 친구와 의견이 다를 때 나는?",
+          "answers": [
+            {
+              "type": "T",
+              "content": "논리적으로 생각하고 최선의 선택을 찾는다."
+            },
+            {
+              "type": "F",
+              "content": "분위기를 고려해 부드럽게 해결하려 한다."
+            }
+          ]
+        },
+        {
+          "which": "TF",
+          "question": "여행 계획을 세울 때 나는?",
+          "answers": [
+            {
+              "type": "T",
+              "content": "장소, 예산, 일정 등 합리적으로 결정한다."
+            },
+            {
+              "type": "F",
+              "content": "감성적인 이유로 여행지를 선택하는 편이다."
+            }
+          ]
+        },
+        {
+          "which": "TF",
+          "question": "여행 중 예상치 못한 상황이 발생하면?",
+          "answers": [
+            {
+              "type": "T",
+              "content": "침착하게 해결 방법을 찾는다."
+            },
+            {
+              "type": "F",
+              "content": "감정적으로 영향을 받아 당황할 때가 많다."
+            }
+          ]
+        },
+        {
+          "which": "JP",
+          "question": "여행 일정을 짤 때 나는?",
+          "answers": [
+            {
+              "type": "J",
+              "content": "시간별로 세부 계획을 짠다."
+            },
+            {
+              "type": "P",
+              "content": "대략적인 계획만 세우고 유동적으로 움직인다."
+            }
+          ]
+        },
+        {
+          "which": "JP",
+          "question": "여행 중 나는?",
+          "answers": [
+            {
+              "type": "J",
+              "content": "일정이 틀어지면 불안해진다."
+            },
+            {
+              "type": "P",
+              "content": "예정과 다르게 가도 괜찮다."
+            }
+          ]
+        },
+        {
+          "which": "JP",
+          "question": "돌아오는 비행기/기차 시간 전까지 나는?",
+          "answers": [
+            {
+              "type": "J",
+              "content": "시간을 철저히 관리하며 움직인다."
+            },
+            {
+              "type": "P",
+              "content": "느긋하게 즉흥적으로 시간을 보낸다."
+            }
+          ]
+        }
+      ]
+    
+    ,
     results: [
       {
         type: "ESTJ",
@@ -296,7 +296,7 @@ export const TESTS = [
       mainImage:
         "https://www.dropbox.com/scl/fi/jmihoko6rjpk0d3rgewsr/personalColorEng-intro.png?rlkey=ifyyqa8m4w44vq1nk08fshhnj&st=n42rl4fc&dl=1",
       thumbImage:
-        "https://www.dropbox.com/scl/fi/x2b3tms9ml6kbz3vcot9h/personalColorEng-thumb.png?rlkey=alaxfwbswgfn34xao2zm99a84&st=zvw3w510&dl=1",
+        "https://raw.githubusercontent.com/ridgeracer607753/projectImage/main/images/dogMbti-thumb04.png",
       lang: "Eng",
       category: "characteristic",
     },
